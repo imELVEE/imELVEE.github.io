@@ -1,0 +1,9 @@
+{
+    "extends": "./tsconfig.paths.json",
+    "compilerOptions": {
+        "module": "CommonJS",
+        "target": "ES6"
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "build"]
+}

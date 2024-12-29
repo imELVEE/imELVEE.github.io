@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from 'react'
+import { Route, Routes, useLocation } from 'react-router-dom';
+
+import Navbar from '@components/Navbar.jsx';
+import About from '@pages/About.jsx';
+import Resume from '@pages/Resume';
 
 function App() {
-  return (
+    const location = useLocation();
+
+    useEffect(() => {
+        const initializeNavbar = () => {
+            let currentPath = location.pathname;
+            if (currentPath === '/') {
+                currentPath = 'about';
+            }
+            else {
+                currentPath = currentPath.substring(1);
+            }
+            Array.from(document.querySelector('ul#navbar').getElementsByTagName('a')).forEach(function (e) {
+                e.classList.remove("active")
+            });
+            document.getElementById(currentPath).className = "active";
+        };
+
+        initializeNavbar()
+    }, [location.pathname]);
+
+    return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Navbar />
+        <div className='Page'>
+            <Routes>
+                <Route path="/" element={<About />} />
+                <Route path="/resume" element={<Resume />} />
+            </Routes>
+        </div>
+        
     </div>
-  );
+    );
 }
 
 export default App;

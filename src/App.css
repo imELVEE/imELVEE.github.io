@@ -2,6 +2,18 @@
   text-align: center;
 }
 
+.Page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  background-color: #2d2834;
+
+  padding-top: 8.5vh;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
