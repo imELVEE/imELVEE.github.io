@@ -6,12 +6,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: calc(100vh - 50px);
+  justify-content: flex-start;
+  min-height: calc(100vh - 50px);
+  overflow: visible;
 
   background-color: #2d2834;
 
-  padding-top: 50px;
+  margin-top: 49px;
 }
 
 .App-logo {
