@@ -1,8 +1,15 @@
+import Calendar from "@/components/Calendar.jsx";
+import RepoList from "@/components/RepoList.jsx";
+
+import "./Projects.css";
+
 const Projects = () => {
+    
     return (
-        <>
-            <h1> This is the Projects page. </h1>
-        </>
+        <div className='projects'>
+            <Calendar />
+            <RepoList />
+        </div>
     );
 };
 

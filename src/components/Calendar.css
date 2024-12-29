@@ -1,0 +1,13 @@
+.calendar {
+    text {
+        color: white;
+    }
+
+    div {
+        color: white;
+    }
+
+    p {
+        color: lightgrey;
+    }
+}
