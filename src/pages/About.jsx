@@ -1,24 +1,16 @@
-import logo from '@/logo.svg';
+import about_profile from '@assets/about_profile.jpg';
+
 import '@/App.css';
+import "./About.css";
 
 const About = () => {
     return (
-        <>
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                    This is the About page.
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header>
-        </>
+        <div className='about'>
+            <img src={about_profile} className="about-profile" alt="Me" />
+            <p>
+                Lorem ipsum.
+            </p>
+        </div>
     );
 };
 

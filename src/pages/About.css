@@ -1,0 +1,19 @@
+.about {
+    display: flex;
+
+    flex-direction: row;
+
+    height: 100%;
+    width: 100%;
+
+    img {
+        width: 40%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    p {
+        color: white;
+        padding-left: 2rem;
+    }
+}
