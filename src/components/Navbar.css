@@ -31,6 +31,8 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
   height: 100%;
+
+  cursor: pointer;
 }
 
 li a:hover:not(.active) {
