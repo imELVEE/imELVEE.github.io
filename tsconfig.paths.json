@@ -6,7 +6,8 @@
             "@@/*": ["./*"],
             "@components/*": ["src/components/*"],
             "@pages/*": ["src/pages/*"],
-            "@assets/*": ["src/assets/*"]
+            "@images/*": ["src/assets/images/*"],
+            "@documents/*": ["src/assets/documents/*"]
         }
     }
 }
