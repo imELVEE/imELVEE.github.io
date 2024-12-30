@@ -14,6 +14,7 @@ const Calendar = () => {
             <ErrorBoundary FallbackComponent={<ActivityCalendar loading={true}/>}>
                 <GitHubCalendar 
                     username="imELVEE" 
+                    throwOnError={true}
                     showWeekdayLabels={['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat']}
                     fontSize={20}
                     blockSize={18}

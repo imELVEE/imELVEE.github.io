@@ -1,13 +1,6 @@
 .projects {
-    text {
-        color: white;
-    }
-
-    div {
-        color: white;
-    }
-
-    p {
-        color: lightgrey;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
