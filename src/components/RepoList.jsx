@@ -3,7 +3,7 @@ import "./RepoList.css";
 const RepoList = () => {
     return (
         <div className="repo-list">
-            Repo List
+            <h1>A List of Some Neat Projects</h1>
         </div>
     );
 };

@@ -8,6 +8,7 @@
     "react": "^19.0.0",
     "react-activity-calendar": "^2.7.5",
     "react-dom": "^19.0.0",
+    "react-error-boundary": "^5.0.0",
     "react-github-calendar": "^4.5.2",
     "react-icons": "^5.4.0",
     "react-router-dom": "^7.1.1",
