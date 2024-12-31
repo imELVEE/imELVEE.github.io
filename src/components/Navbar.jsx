@@ -62,7 +62,6 @@ const Navbar = () => {
             <ul id='navbar'>
                 <li><a className="active" id='about' onClick={navigateToAbout}>ABOUT</a></li>
                 <li><a id='resume' onClick={() => navigateToPage('resume')}>RESUME</a></li>
-                <li><a id='transcript' onClick={() => navigateToPage('transcript')}>TRANSCRIPT</a></li>
                 <li><a id='projects' onClick={() => navigateToPage('projects')}>PROJECTS</a></li>
 
                 <li className="right">

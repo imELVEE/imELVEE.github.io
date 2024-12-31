@@ -4,7 +4,6 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import Navbar from '@components/Navbar.jsx';
 import About from '@pages/About.jsx';
 import Resume from '@pages/Resume.jsx';
-import Transcript from '@/pages/Transcript.jsx';
 import Projects from '@pages/Projects.jsx';
 
 function App() {
@@ -35,7 +34,6 @@ function App() {
             <Routes>
                 <Route path="/" element={<About />} />
                 <Route path="/resume" element={<Resume />} />
-                <Route path="/transcript" element={<Transcript />} />
                 <Route path="/projects" element={<Projects />} />
             </Routes>
         </div>
