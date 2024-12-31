@@ -57,7 +57,7 @@ const ProjectList = () => {
 
     return (
         <>
-            <h1>A List of Some Neat Projects!</h1>
+            <h1 className='list-title'>A List of Some Neat Projects!</h1>
             <ul className="project-list">
                 {projects.map((project) => (
                     <ListItem

@@ -1,3 +1,6 @@
-h1 {
-    color: white;
+.pdf {
+    display: block;
+    width: 100%;
+    height: calc(100vh - 50px); /* Ensures it occupies the full viewport height */
+    border: none; /* Optional: Removes any default borders */
 }
