@@ -1,6 +1,6 @@
 .custom-list-item {
     display: flex;
-    width: 100%;
+    width: 50%;
 
     list-style: none;
 
@@ -52,4 +52,10 @@
 
 .custom-list-content {
     width: 70%;
+}
+
+@media (max-width: 852px) {
+    .custom-list-item {
+        width: 100%;
+    }
 }
