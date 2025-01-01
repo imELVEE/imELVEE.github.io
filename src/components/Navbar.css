@@ -24,19 +24,21 @@ li {
     height: 100%;
 }
 
-li a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  height: 100%;
-
-  cursor: pointer;
+li button {
+    all: unset;
+    text-decoration: none;
+    cursor: pointer;
+    
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    height: 100%;
 }
 
-li a:hover:not(.active) {
-  background-color: lightblue;
+.left button:hover:not(.active) {
+  background-color: #9a999e;
 }
 
 .active {
@@ -48,13 +50,14 @@ li a:hover:not(.active) {
     float: right;
     position: relative; /* Set this as the reference for the dropdown */
     background-color: black;
-    a {
+
+    button {
         color: white;
         text-decoration: none;
     }
 
-    a:hover {
-        background-color: black;
+    button:hover {
+        background-color: #1a1a1b;
     }
 }
 

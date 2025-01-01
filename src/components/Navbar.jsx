@@ -26,7 +26,7 @@ const Navbar = () => {
     }, [isDropdownOpen]);
 
     const navigateToAbout = () => {
-        Array.from(document.querySelector('ul#navbar').getElementsByTagName('a')).forEach(function (e) {
+        Array.from(document.querySelector('ul#navbar').getElementsByTagName('button')).forEach(function (e) {
             e.classList.remove("active")
         });
         document.getElementById('about').className = "active";
@@ -35,7 +35,7 @@ const Navbar = () => {
     };
 
     const navigateToPage = (page) => {
-        Array.from(document.querySelector('ul#navbar').getElementsByTagName('a')).forEach(function (e) {
+        Array.from(document.querySelector('ul#navbar').getElementsByTagName('button')).forEach(function (e) {
             e.classList.remove("active")
         });
         document.getElementById(page).className = "active";
@@ -60,12 +60,12 @@ const Navbar = () => {
     return (
         <>
             <ul id='navbar'>
-                <li><a className="active" id='about' onClick={navigateToAbout}>ABOUT</a></li>
-                <li><a id='resume' onClick={() => navigateToPage('resume')}>RESUME</a></li>
-                <li><a id='projects' onClick={() => navigateToPage('projects')}>PROJECTS</a></li>
+                <li className='left'><button className="active" id='about' onClick={navigateToAbout}>ABOUT</button></li>
+                <li className='left'><button id='resume' onClick={() => navigateToPage('resume')}>RESUME</button></li>
+                <li className='left'><button id='projects' onClick={() => navigateToPage('projects')}>PROJECTS</button></li>
 
                 <li className="right">
-                    <a id='contact' onClick={toggleDropdown}>CONTACT ME</a>
+                    <button id='contact' onClick={toggleDropdown}>CONTACT ME</button>
                     {isDropdownOpen && (
                         <div className="dropdown-content">
                             <h3>Contact Information</h3>
