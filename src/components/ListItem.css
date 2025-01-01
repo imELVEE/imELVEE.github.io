@@ -13,6 +13,7 @@
 .custom-list-link {
     display: flex;
     flex-direction: row;
+    text-decoration: none;
 
     width: 100%;
     height: 100%;
