@@ -1,4 +1,11 @@
 .calendar {
+    width: 90%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
     text {
         color: white;
     }
@@ -14,4 +21,12 @@
     h1 {
         color: white
     }
+}
+
+ErrorBoundary {
+    width: 100%;
+}
+
+GithubCalendar {
+    width: 100%;
 }
