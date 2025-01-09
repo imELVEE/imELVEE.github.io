@@ -108,19 +108,19 @@ li button {
 }
 
 .copy-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 5px;
-    font-size: 18px;
-    color: #007bff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: none !important;
+    border: none !important;
+    cursor: pointer !important;
+    padding: 5px !important;
+    font-size: 18px !important;
+    color: #007bff !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
 }
 
 .copy-button:hover {
-    color: #0056b3;
+    color: #0056b3 !important;
 }
 
 .notification {
