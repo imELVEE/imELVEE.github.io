@@ -1,19 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.d4cb36be.css",
-    "main.js": "/static/js/main.02c62350.js",
+    "main.js": "/static/js/main.ec5e2dea.js",
     "static/js/488.f9972b8f.chunk.js": "/static/js/488.f9972b8f.chunk.js",
     "static/media/about_profile.jpg": "/static/media/about_profile.d3d11ae80b556a76a129.jpg",
     "static/media/peepifyLogo.png": "/static/media/peepifyLogo.6f137781aaf91434a4c4.png",
     "static/media/resume.pdf": "/static/media/resume.394d085d0f0f584c4a96.pdf",
+    "static/media/profile.png": "/static/media/profile.3d3429bff69f686f12a7.png",
     "index.html": "/index.html",
     "static/media/javascript,__webpack_public_path__ = __webpack_base_uri__ = htmlWebpackPluginPublicPath;": "/static/media/1feff74faaf0efc6a044.1feff74faaf0efc6a044",
     "main.d4cb36be.css.map": "/static/css/main.d4cb36be.css.map",
-    "main.02c62350.js.map": "/static/js/main.02c62350.js.map",
+    "main.ec5e2dea.js.map": "/static/js/main.ec5e2dea.js.map",
     "488.f9972b8f.chunk.js.map": "/static/js/488.f9972b8f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d4cb36be.css",
-    "static/js/main.02c62350.js"
+    "static/js/main.ec5e2dea.js"
   ]
 }
