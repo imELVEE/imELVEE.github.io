@@ -4,9 +4,7 @@ body {
     margin: 0;
 }
 
-
 #navbar {
-    list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: visible;
@@ -17,6 +15,12 @@ body {
     right: 0;
     width: 100vw;
     max-height: 50px;
+}
+
+#navbar-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 li {
@@ -38,12 +42,12 @@ li button {
 }
 
 .left button:hover:not(.active) {
-  background-color: #9a999e;
+    background-color: #9a999e;
 }
 
 .active {
-  background-color: black;
-  color: white;
+    background-color: black;
+    color: white;
 }
 
 .right {
@@ -154,5 +158,66 @@ li button {
     100% {
         opacity: 0;
         transform: translateY(20px);
+    }
+}
+
+.hamburger {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 15px;
+}
+
+
+.navbar-header{
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .navbar-header {
+        display: flex;
+    }
+
+    #navbar-links {
+        position: fixed;
+        top: 50px;
+        left: 0;
+
+        display: none; 
+        flex-direction: column;
+        align-items: flex-start;
+
+        li {
+            background-color: white;
+            width: 70vw;
+            padding-right: 16px;
+
+            button {
+                text-align: left;
+                width: 100%;
+                padding: 14px 0px;
+                padding-left: 16px;
+            }
+        }
+
+        .right {
+            background-color: black;
+        }
+    }
+
+    #navbar-links.open {
+        display: flex;
     }
 }
