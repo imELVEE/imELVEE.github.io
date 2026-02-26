@@ -10,36 +10,35 @@ const About = () => {
             <div className='about-text-section'>
                 <h1>About Me</h1>
                 <p>
-                    Hello! Welcome to my portfolio.
+                    I’m Alvi Aziz, a Computer Science graduate from Hunter College (CUNY) based in Queens, NY.
+                    I like work that sits close to real systems: backend logic, infrastructure, automation, and integrations.
                 </p>
                 <p>
-                    My name is Alvi Aziz, and I am a soon-to-be graduate of Hunter College with a passion for software development. 
-                    Over the years, I have nurtured this passion through extensive studying and hands-on learning. 
-                    Initially, I explored various fields, including web development, mobile development, and game development. 
-                    Along the way, I also gained knowledge in database management, graph theory, and networking. 
-                    This broad foundation has given me a well-rounded perspective on the world of software development.
+                    Recently I built a self-hosted Docker stack (Home Assistant, Frigate, Mosquitto) and focused on making it reliable and secure, including Nginx, TLS, and an MQTT event flow. 
+                    I enjoy taking something that works “in theory” and pushing it until it works consistently in the real world.
+                    
                 </p>
                 <p>
-                    My curiosity has always driven me to delve deeper into any subject matter. 
-                    Whether it's understanding the inner workings of a system, equation, or protocol, I strive for a comprehensive understanding. 
-                    For example, I am currently exploring Azure DevOps and its applications for my next project, as well as honing my skills in React while building this portfolio. 
-                    As a former STEM tutor, I enjoy the process of learning and problem-solving, which has equipped me to adapt to various work environments and challenges.
+                    I’m currently looking for entry-level roles in backend, infrastructure, or software engineering, and I’m open to adjacent IT roles where I can keep building and shipping.
                 </p>
                 <p>
-                    Through my experiences, I have also discovered what I enjoy most in the field of computer science. 
-                    While I find database management less engaging, I thrive when working on creating or optimizing logic-based systems and applications. 
-                    Challenges like those found on platforms such as LeetCode are both stimulating and rewarding for me. 
-                    My primary interest lies in backend development, where I can contribute to optimizing infrastructure and developing robust systems. 
-                    However, I remain open to exploring frontend work, particularly in collaboration with teams working on cohesive user experiences.
+                    Core stack: C++ • Python • JavaScript/TypeScript • SQL • Docker • Linux • Nginx • Git
                 </p>
                 <p>
                     If you wish to get in touch, you can find my contact information in the "CONTACT ME" section at the top-right corner or on my resume. 
+                </p>
+                <p>
                     I look forward to connecting and discussing how we can work together.
+                    Use the navbar to view Projects and Resume, or click the buttons below.
                 </p>
 
                 <p className="last-updated">
-                    Last Updated: December 2024
+                    Last Updated: February 2026
                 </p>
+                <div className="about-buttons">
+                    <a href="/resume" className="about-button">View Resume</a>
+                    <a href="/projects" className="about-button">View Projects</a>
+                </div>
             </div>
         </div>
     );
