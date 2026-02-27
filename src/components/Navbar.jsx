@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { FaRegCopy } from 'react-icons/fa';
 import { FaBars } from 'react-icons/fa';
 import { IoClose } from "react-icons/io5";
@@ -8,22 +8,17 @@ import './Navbar.css';
 
 const Navbar = () => {
     const navigate = useNavigate();
-    const [activePage, setActivePage] = useState(undefined);
+    const location = useLocation();
+
+    const activePage =
+        location.pathname === "/" ? "about" :
+        location.pathname.startsWith("/resume") ? "resume" :
+        location.pathname.startsWith("/projects") ? "projects" :
+        undefined;
+
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [notification, setNotification] = useState('');
-
-    useEffect(() => {
-        // Set the active page based on the current URL
-        const path = window.location.pathname;
-        if (path === '/') {
-            setActivePage('about');
-        } else if (path === '/resume') {
-            setActivePage('resume');
-        } else if (path === '/projects') {
-            setActivePage('projects');
-        }
-    }, []);
 
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -42,7 +37,6 @@ const Navbar = () => {
     }, [isDropdownOpen]);
 
     const navigateToPage = (page) => {
-        setActivePage(page);
         setIsMenuOpen(false);
 
         if (page === 'about') {
