@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import about_profile from '@images/about_profile.jpg';
 
 import '@/App.css';
@@ -36,8 +37,8 @@ const About = () => {
                     Last Updated: February 2026
                 </p>
                 <div className="about-buttons">
-                    <a href="/resume" className="about-button">View Resume</a>
-                    <a href="/projects" className="about-button">View Projects</a>
+                    <Link to="/resume" className="about-button">View Resume</Link>
+                    <Link to="/projects" className="about-button">View Projects</Link>
                 </div>
             </div>
         </div>
