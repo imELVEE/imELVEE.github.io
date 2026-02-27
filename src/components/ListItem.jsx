@@ -33,7 +33,6 @@ ListItem.propTypes = {
 ListItem.defaultProps = {
     icon: null,
     image: null,
-    projectLink: null,
 };
 
 export default ListItem;
