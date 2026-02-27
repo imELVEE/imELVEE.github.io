@@ -1,16 +1,26 @@
-import resume_pdf from "@documents/resume.pdf";
+import resumePdf from "@documents/resume.pdf";
 import "./Resume.css";
 
 const Resume = () => {
     return (
-        <object class="pdf" 
-            data={resume_pdf}
-            type="application/pdf"
-            width="100%"
-            height="100%">
+        <div className="resumePage">
+            <div className="pdfWrap">
+                <div className="resumeActionsOverlay">
+                <a className="resumeBtn" href={resumePdf} target="_blank" rel="noreferrer">
+                    Open
+                </a>
+                <a className="resumeBtn" href={resumePdf} download>
+                    Download
+                </a>
+                </div>
 
-            <p>Your browser does not support PDFs. Download the PDF <a href={resume_pdf}>here</a>.</p>
-        </object>
+                <iframe className="pdf" src={resumePdf} title="Resume PDF" />
+            </div>
+
+            <p className="resumeFallback">
+                If the PDF doesn’t render, <a href={resumePdf} download>download it here</a>.
+            </p>
+        </div>
     );
 };
 
