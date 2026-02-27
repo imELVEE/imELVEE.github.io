@@ -55,13 +55,18 @@ const Navbar = () => {
     };
     
     const copyToClipboard = (text, fieldName) => {
-        navigator.clipboard.writeText(text);
-        setNotification(`${fieldName} copied to clipboard!`);
-
-        // Automatically hide the notification after 3 seconds
-        setTimeout(() => {
-            setNotification('');
-        }, 3000);
+        try{
+            navigator.clipboard.writeText(text);
+            setNotification(`${fieldName} copied to clipboard!`);
+        } catch (err) {
+            setNotification(`Could not copy ${fieldName}. Please try manually copying: ${text}`);
+        } finally {
+            // Automatically hide the notification after 3 seconds
+            setTimeout(() => {
+                setNotification('');
+            }, 3000);
+        }
+        
     };
     
     return (
