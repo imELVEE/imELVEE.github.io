@@ -34,7 +34,7 @@ const About = () => {
                 </p>
 
                 <p className="last-updated">
-                    Last Updated: February 2026
+                    Last Updated: May 2026
                 </p>
                 <div className="about-buttons">
                     <Link to="/resume" className="about-button">View Resume</Link>
