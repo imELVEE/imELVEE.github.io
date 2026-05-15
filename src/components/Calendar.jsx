@@ -11,7 +11,7 @@ const Calendar = () => {
     return (
         <div className="calendar">
             <h1>Public Activity on Github</h1>
-            <ErrorBoundary FallbackComponent={<ActivityCalendar loading={true}/>}>
+            <ErrorBoundary fallback={<ActivityCalendar loading={true} />}>
                 <GitHubCalendar 
                     username="imELVEE" 
                     throwOnError={true}

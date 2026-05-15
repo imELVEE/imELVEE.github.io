@@ -54,9 +54,9 @@ const Navbar = () => {
         setIsMenuOpen((prev) => !prev);
     };
     
-    const copyToClipboard = (text, fieldName) => {
+    const copyToClipboard = async (text, fieldName) => {
         try{
-            navigator.clipboard.writeText(text);
+            await navigator.clipboard.writeText(text);
             setNotification(`${fieldName} copied to clipboard!`);
         } catch (err) {
             setNotification(`Could not copy ${fieldName}. Please try manually copying: ${text}`);
