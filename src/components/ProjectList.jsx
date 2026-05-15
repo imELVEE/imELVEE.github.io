@@ -28,7 +28,7 @@ const ProjectList = () => {
                         image={imageSrc}
                         title={project.title}
                         description={project.description}
-                        projectLink={project.link}
+                        projectLink={project.url}
                     />
                     );
                 })}
