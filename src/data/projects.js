@@ -7,6 +7,13 @@ export const projects = [
         url: "https://github.com/imELVEE/imELVEE.github.io/tree/source",
     },
     {
+        id: "camera-server",
+        icon: "LuServer",
+        title: "Camera Server",
+        description: "Home server setup for secure remote access to Frigate-powered camera monitoring.",
+        url: "https://github.com/imELVEE/Frigate-Home-Server",
+    },
+    {
         id: "powershell-profile",
         icon: "VscTerminalPowershell",
         title: "PowerShell Profile and Scripts",
